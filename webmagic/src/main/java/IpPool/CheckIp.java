@@ -62,6 +62,8 @@ class CheckIp{
         checkProxyIp(proxyIpMap, reqUrl);
     }
 
+
+
     public static void main (Map<String,Integer> map) {
 
         Map<String, Integer> proxyIpMap = map;
