@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="YingJie.dao.PersinfoMapper">
+
+  <insert id="insert" parameterType="YingJie.entity">
+    insert into tbl_yingjie ( id,  name,  state,  sex,  age,  university,  university_types,  professional,
+        birth,  graduation,  live_place,  native_place,  self_description,  position_type,  expect_salary,
+        expect_place,  expect_position,  summary_intention,  education_experience,  work_experience,  school_rewards,  campus_jobs)
+    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR},
+    #{age,jdbcType=VARCHAR}, #{university,jdbcType=VARCHAR}, #{university_types,jdbcType=VARCHAR},
+    #{professional,jdbcType=VARCHAR}, #{birth,jdbcType=VARCHAR},
+    #{graduation,jdbcType=VARCHAR}, #{live_place,jdbcType=VARCHAR},
+    #{native_place,jdbcType=VARCHAR}, #{self_description,jdbcType=LONGVARCHAR},
+    #{position_type,jdbcType=VARCHAR}, #{expect_salary,jdbcType=VARCHAR},
+    #{expect_place,jdbcType=VARCHAR}, #{expect_position,jdbcType=VARCHAR},
+    #{summary_intention,jdbcType=LONGVARCHAR}, #{education_experience,jdbcType=LONGVARCHAR},
+    #{work_experience,jdbcType=LONGVARCHAR}, #{school_rewards,jdbcType=LONGVARCHAR},
+      #{campus_jobs,jdbcType=LONGVARCHAR})
+  </insert>
+
+</mapper>
